@@ -33,10 +33,10 @@ app.layout = html.Div(children=[
             'data': [
                 # set x to be weekday, and y to be the counts. We use bars to represent our data.
                 {'x': weekday_in_order, 'y': counts_in_order, 'type': 'bar', 'name': 'Total'},
-                {'x': weekday_in_order, 'y': ped_s, 'type': 'bar', 'name': 'Total'},
-                {'x': weekday_in_order, 'y': ped_n, 'type': 'bar', 'name': 'Total'},
-                {'x': weekday_in_order, 'y': bike_s, 'type': 'bar', 'name': 'Total'},
-                {'x': weekday_in_order, 'y': bike_n, 'type': 'bar', 'name': 'Total'},
+                {'x': weekday_in_order, 'y': ped_s, 'type': 'bar', 'name': 'Ped S'},
+                {'x': weekday_in_order, 'y': ped_n, 'type': 'bar', 'name': 'Ped N'},
+                {'x': weekday_in_order, 'y': bike_s, 'type': 'bar', 'name': 'Bike S'},
+                {'x': weekday_in_order, 'y': bike_n, 'type': 'bar', 'name': 'Bike N'},
 
 
             ],
@@ -54,4 +54,6 @@ if __name__ == '__main__':
     app.run_server(debug=True)
 
 
-
+# Exercise 2
+# Create another visualization of your choice of data and chart type.
+# You can use pandas to help loading data, or just hard-coded the data is fine.
